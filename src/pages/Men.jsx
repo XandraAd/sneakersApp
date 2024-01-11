@@ -4,7 +4,7 @@ import { Box, Flex } from "@chakra-ui/react";
 import ProductCard from "../components/shared/product-cart/ProductCard";
 import SectionHeader from "../components/shared/section-header/SectionHeader";
 
-import mensData from "../components/MensData";
+import MensData from "../components/mensData.js";
 
 const Men = () => {
   return (
@@ -17,7 +17,7 @@ const Men = () => {
         <Flex wrap={"wrap"} gap={3}>
           {" "}
           {/* Remember to use map function to make code cleaner and more dynamic */}
-          {mensData.map((men) => (
+          {MensData.map((men) => (
             <Box key={men.id}>
               <ProductCard
               showBrandText={true}
