@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --text-orange: #ff7d1a;
+    --bg-orange-50: hsl(25, 100%, 94%);
+    --text-white-90: hsl(223, 64%, 98%);
+    --text-grey-30: hsl(220, 14%, 75%);
+    --text-grey-50: hsl(219, 9%, 45%);
+    --text-black-90: hsl(220, 13%, 13%);
+    --text-white:       hsl(0,0%,100%);
+
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif !important;
+    background-color: rgba(255, 228, 208, 0.124) !important;
+}
+
+.text-orange {
+    color: var(--text-orange);
+    
+}
+
+.bg-orange-50 {
+    background-color: var(--bg-orange-50);
+}
+
+.bg-orange-60 {
+    background-color: hsl(26, 100%, 97%);
+}
+
+.bg-orange {
+    background-color: var(--text-orange)
+}
+
+.text-white-90 {
+    color: var(--text-white-90);
+}
+
+.text-grey-30 {
+    color: var(--text-grey-30);
+}
+
+.text-grey-50 {
+    color: var(--text-grey-50);
+}
+
+.text-black-90 {
+    color: var(--text-black-90);
+}
+
+.navbar-toggler, .navbar-toggler:focus{
+    border: transparent!important;
+    outline: transparent !important;
+    box-shadow : none !important;
+}
+
+.navbar-toggler-icon {
+    background: url('./assets/menu.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--bg-orange-50);
+}
+
+.popular-brands-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.collection_section_headers {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+
+.mens-adidas-brands {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+.contactForm {
+    width: 450px; /* Set the width of the form */
+   
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(234, 115, 5, 0.755); /* Add a box shadow */
+    border-radius: 8px; /* Add rounded corners */
+    background-color: var(--text-white); /* Set a white background color */
+  }
+  
+  /* Optional: Adjust styles for labels and inputs */
+  .contactForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--bg-orange-50);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contactForm button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; 
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+
+.customNavigationTarget .swiper-button-prev, .customNavigationTarget .swiper-button-next  {
+    top: 0%;
+    width: fit-content;
+    margin-top: 0;
+    color: var(--text-orange);
+    padding: 10px 16px;
+}
+
+.customNavigationTarget .swiper-button-next {
+    right: 3.5rem;
+}
+
+.customNavigationTarget .swiper-button-prev {
+    left: 85vw;
+}
+
+.footer-anchor:hover {
+    color: var(--text-orange) !important;
+}
+
+@media screen and (min-width: 1280px) {
+    .customNavigationTarget .swiper-button-prev {
+        left: 88vw;
+    }
+}
+
+.customNavigationTarget .swiper-button-prev::after, .customNavigationTarget .swiper-button-next::after  {
+    font-size: 1rem;
+    /* border: 1px solid red; */
+}
+
+.customNavigationTarget .swiper-button-prev:hover, .customNavigationTarget .swiper-button-next:hover  {
+    background-color: rgba(255, 151, 113, 0.174);
+    padding: 10px 16px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .customNavigationTarget .swiper-button-prev, .customNavigationTarget .swiper-button-next {
+        display: none!important
+    }
+}
