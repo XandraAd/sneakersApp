@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import mensData from "../components/MensData";
+import mensData from "../components/mensData.js";
 import { Box, Flex } from "@chakra-ui/react";
 import SectionHeader from "../components/shared/section-header/SectionHeader";
 import ProductCard from "../components/shared/product-cart/ProductCard";

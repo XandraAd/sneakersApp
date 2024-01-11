@@ -5,7 +5,7 @@ import ProductCard from "../components/shared/product-cart/ProductCard";
 import SectionHeader from "./shared/section-header/SectionHeader";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Navigation } from "swiper/modules";
-import shoeData from "./shoeData";
+import shoeData from "./shoeData.js";
 
 
 const Brands = () => {
