@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import mensData from "../components/mensData.js";
+import ShoeData from "../components/shoeData.js";
 import { Box, Flex } from "@chakra-ui/react";
 import SectionHeader from "../components/shared/section-header/SectionHeader";
 import ProductCard from "../components/shared/product-cart/ProductCard";
@@ -16,7 +16,7 @@ const Women = () => {
         <Flex wrap={"wrap"} gap={3}>
           {" "}
           {/* Remember to use map function to make code cleaner and more dynamic */}
-          {mensData.map((men) => (
+          {ShoeData.map((men) => (
             <Box key={men.id}>
               <ProductCard
                 showBrandText={true}
